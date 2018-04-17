@@ -19,6 +19,7 @@ namespace Laboratorio3
             patente = miPatente;
         }
         
+               
         public Accesorio[] GetListaAccesoriosDeseados()
         {
             return accesorios;

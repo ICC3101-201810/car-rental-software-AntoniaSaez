@@ -31,5 +31,30 @@ namespace Laboratorio3
                 return true;
             }
         }
+        public bool AgregarEmpresa(Empresa empresas)
+        {
+            if (listaempresas.Contains(empresas))
+            {
+                return false;
+            }
+            else
+            {
+                listaempresas.Add(empresas);
+                return true;
+            }
+
+        }
+        public bool AgregarOrgaoinstitucion(OrganizacionesInstituciones orginstitu)
+        {
+            if (listaorg.Contains(orginstitu))
+            {
+                return false;
+            }
+            else
+            {
+                listaorg.Add(orginstitu);
+                return true;
+            }
+        }
     }
 }

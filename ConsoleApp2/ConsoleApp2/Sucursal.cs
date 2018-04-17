@@ -27,15 +27,18 @@ namespace Laboratorio3
             int i = cantvehiculos;
             if (cantvehiculos > 0)
             {
-                int posicionvehiculo = i - (cantvehiculos - 1);
+                int posicionvehiculo = cantvehiculos - vehiculos.Length;
                 vehiculos[posicionvehiculo] = vehiculo;
                 cantvehiculos--;
                 return true;
             }
 
             else return false;
-            
                    
+        }
+        public Vehiculo[] GetlistaVehiculos()
+        {
+            return vehiculos;
         }
 
         public void RegistrarArriendo(Arrendar arriendos)
