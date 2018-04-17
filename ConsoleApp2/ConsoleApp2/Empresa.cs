@@ -14,7 +14,7 @@ namespace Laboratorio3
         {
             licencia = miLicencia;
         }
-        public bool AgregarEmpresa(Empresa empresa)
+        public bool AceptarArriendo(Empresa empresa)
         {
             if (licencia =="si")
             {

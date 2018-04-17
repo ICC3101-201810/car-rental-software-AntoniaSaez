@@ -6,15 +6,22 @@ using System.Threading.Tasks;
 
 namespace Laboratorio3
 {
-    class Vehiculo : Sucursal
+    public class Vehiculo 
     {
+        Accesorio[] accesorios;
         string tipo;
-        string patente
+        string patente;
+        
 
-        public Vehiculo(string miNombre, string miDireccion, string miTipo, string miPatente) : base(miNombre, miDireccion)
+        public Vehiculo(string miTipo, string miPatente)
         {
             tipo = miTipo;
             patente = miPatente;
+        }
+        
+        public Accesorio[] GetListaAccesoriosDeseados()
+        {
+            return accesorios;
         }
     }
 }

@@ -8,6 +8,9 @@ namespace Laboratorio3
 {
     public class Cliente
     {
+        List<Persona> listapersonas;
+        List<Empresa> listaempresas;
+        List<OrganizacionesInstituciones> listaorg;
         string nombre;
         double rut;
 
@@ -15,6 +18,18 @@ namespace Laboratorio3
         {
             nombre = miNombre;
             rut = miRut;
+        }
+        public bool AgregarPersona(Persona personas)
+        {
+           if (listapersonas.Contains(personas))
+            {
+                return false;
+            }
+            else
+            {
+                listapersonas.Add(personas);
+                return true;
+            }
         }
     }
 }
